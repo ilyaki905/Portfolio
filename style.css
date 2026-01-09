@@ -85,3 +85,39 @@ ul { list-style: none; padding: 0; }
 li span { color: var(--accent); margin-right: 10px; }
 footer { text-align: center; padding: 2rem; font-size: 0.8rem; color: var(--dim); }
 a { color: var(--accent); text-decoration: none; }
+
+/* Контейнер для пары изображений */
+.image-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.project-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* Фото будут заполнять область без искажения */
+    border: 1px solid #222;
+    filter: grayscale(100%) contrast(1.2); /* Единый стиль: ч/б и контраст */
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover .project-img {
+    filter: grayscale(0%) contrast(1); /* При наведении на карточку фото оживают */
+    border-color: var(--accent);
+}
+
+.case-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Адаптивность для мобилок: если экран узкий, фото встают друг под друга */
+@media (max-width: 600px) {
+    .image-pair {
+        grid-template-columns: 1fr;
+    }
+}
