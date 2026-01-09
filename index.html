@@ -3,63 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>itech905 | Конструкторское бюро и производство БПЛА</title>
+    <title>itech905 | Конструкторское бюро БПЛА</title>
     <style>
-        body { font-family: -apple-system, sans-serif; background: #fff; color: #1a1a1a; line-height: 1.6; margin: 0; }
-        .container { max-width: 650px; margin: 80px auto; padding: 0 25px; }
-        header { margin-bottom: 60px; }
-        h1 { font-size: 2rem; font-weight: 600; margin-bottom: 10px; }
-        .tagline { color: #888; font-size: 1.1rem; }
-        section { margin-bottom: 45px; }
-        h2 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #ccc; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 20px; }
-        .item { margin-bottom: 25px; }
-        .item-title { font-weight: 600; display: block; }
-        .item-desc { color: #555; font-size: 0.95rem; }
-        footer { margin-top: 80px; font-size: 0.7rem; color: #ddd; }
+        /* Стиль Edinburgh: Минимализм и чистая типографика */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+            margin: 0;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .wrapper {
+            max-width: 760px;
+            margin: 140px auto; /* Большой отступ сверху как в теме */
+            padding: 0 40px;
+        }
+
+        header {
+            margin-bottom: 90px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: -1.5px;
+            margin: 0 0 15px 0;
+        }
+
+        .description {
+            font-size: 1.2rem;
+            color: #777;
+            font-weight: 300;
+        }
+
+        section {
+            margin-bottom: 70px;
+        }
+
+        h2 {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: #bbb;
+            border-bottom: 1px solid #f2f2f2;
+            padding-bottom: 12px;
+            margin-bottom: 35px;
+            font-weight: 600;
+        }
+
+        .item {
+            margin-bottom: 45px;
+        }
+
+        .item-title {
+            display: block;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #000;
+        }
+
+        .item-text {
+            color: #444;
+            font-size: 1.05rem;
+        }
+
+        .contact-email {
+            font-size: 1.1rem;
+            color: #000;
+            text-decoration: none;
+            border-bottom: 1px solid #000;
+            transition: opacity 0.2s;
+        }
+
+        .contact-email:hover {
+            opacity: 0.5;
+        }
+
+        footer {
+            margin-top: 150px;
+            font-size: 0.8rem;
+            color: #ccc;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+
+    <div class="wrapper">
         <header>
             <h1>itech905</h1>
-            <div class="tagline">Инженерные решения в сфере БПЛА</div>
+            <p class="description">Разработка, сертификация и организация производства БПЛА.</p>
         </header>
 
-        <section>
+        <section id="services">
             <h2>Оказываемые услуги</h2>
+            
             <div class="item">
                 <span class="item-title">Организация производства БПЛА</span>
-                <p class="item-desc">Проектирование и запуск серийных сборочных линий.</p>
+                <p class="item-text">Проектирование производственных площадок и запуск серийных линий сборки «под ключ».</p>
             </div>
+
             <div class="item">
                 <span class="item-title">Сертификация и инженерный аудит</span>
-                <p class="item-desc">Техническая экспертиза и подготовка документации.</p>
+                <p class="item-text">Полный цикл сопровождения: от анализа конструкторской документации до получения сертификатов.</p>
             </div>
+
             <div class="item">
-                <span class="item-title">R&D Разработка</span>
-                <p class="item-desc">Исследования и создание перспективных беспилотных систем.</p>
+                <span class="item-title">R&D разработка</span>
+                <p class="item-text">Научно-исследовательские работы по созданию перспективных беспилотных систем и целевых нагрузок.</p>
             </div>
         </section>
 
-        <section>
+        <section id="portfolio">
             <h2>Портфолио</h2>
             <div class="item">
                 <span class="item-title">Выполненные проекты</span>
-                <p class="item-desc">Разработка целевых нагрузок, планерных схем и систем управления.</p>
+                <p class="item-text">Опыт реализации проектов в области авиастроения, систем управления и защиты объектов.</p>
             </div>
             <div class="item">
                 <span class="item-title">Навыки</span>
-                <p class="item-desc">CAD-проектирование, аэродинамика, управление производственными процессами.</p>
+                <p class="item-text">CAD/CAM, аэродинамическое моделирование, управление производственными процессами.</p>
             </div>
         </section>
 
-        <section>
-            <h2>Контакты</h2>
-            <p>Email: <strong>itech905@itech905.info</strong></p>
+        <section id="contact">
+            <h2>Сотрудничество</h2>
+            <p class="item-text">Для запроса портфолио или обсуждения проекта:</p>
+            <a href="mailto:itech905@itech905.info" class="contact-email">itech905@itech905.info</a>
         </section>
 
-        <footer>© 2026 ITECH905.INFO</footer>
+        <footer>
+            &copy; 2026 itech905.info
+        </footer>
     </div>
+
 </body>
-</html> 
-w 
+</html>
