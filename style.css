@@ -85,3 +85,24 @@ ul { list-style: none; padding: 0; }
 li span { color: var(--accent); margin-right: 10px; }
 footer { text-align: center; padding: 2rem; font-size: 0.8rem; color: var(--dim); }
 a { color: var(--accent); text-decoration: none; }
+.hero-image-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: radial-gradient(circle, rgba(0, 242, 255, 0.05) 0%, rgba(10, 10, 10, 1) 70%);
+}
+
+.tech-photo {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #222;
+    /* This adds a slight cyan glow to the image */
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.1);
+    filter: grayscale(20%) contrast(1.1);
+    transition: filter 0.3s ease;
+}
+
+.tech-photo:hover {
+    filter: grayscale(0%) contrast(1.2);
+    border-color: var(--accent);
+}
