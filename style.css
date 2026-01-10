@@ -163,3 +163,26 @@ a { color: var(--accent); text-decoration: none; }
     opacity: 1;
     margin-right: 10px; /* Отступ между адресом и словом EMAIL */
 }
+@media (max-width: 600px) {
+    /* Раскрываем email принудительно */
+    .email-text {
+        max-width: 300px;
+        opacity: 1;
+        margin-right: 0;
+        margin-bottom: 5px; /* Отступ между почтой и словом EMAIL */
+        font-size: 0.75rem;
+    }
+
+    /* Перестраиваем в колонку, чтобы всё влезло по ширине */
+    .email-link {
+        flex-direction: column-reverse; 
+        align-items: center;
+        display: flex;
+    }
+    
+    footer p {
+        display: flex;
+        flex-direction: column;
+        gap: 15px; /* Разносим LinkedIn и Email подальше для удобного нажатия пальцем */
+    }
+}
