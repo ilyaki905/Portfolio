@@ -121,3 +121,22 @@ a { color: var(--accent); text-decoration: none; }
         grid-template-columns: 1fr;
     }
 }
+/* Контейнер для размещения блоков в ряд */
+.skills-services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Две равные колонки */
+    gap: 40px; /* Расстояние между колонками */
+    align-items: start;
+}
+
+/* Стили для заголовков внутри колонок */
+.skills-column h2, .services-column h2 {
+    margin-top: 0;
+}
+
+/* Адаптивность: на мобильных устройствах блоки снова встанут друг под друга */
+@media (max-width: 800px) {
+    .skills-services-grid {
+        grid-template-columns: 1fr;
+    }
+}
