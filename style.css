@@ -140,3 +140,26 @@ a { color: var(--accent); text-decoration: none; }
         grid-template-columns: 1fr;
     }
 }
+.email-link {
+    text-decoration: none;
+    display: inline-flex;
+    flex-direction: row-reverse; /* Позволяет адресу появиться СЛЕВА от слова EMAIL */
+    align-items: center;
+    overflow: hidden;
+}
+
+.email-text {
+    max-width: 0;
+    opacity: 0;
+    white-space: nowrap;
+    transition: all 0.5s ease;
+    margin-right: 0;
+    color: var(--dim); /* Сделаем адрес чуть менее ярким, чем основная ссылка */
+    font-size: 0.8rem;
+}
+
+.email-link:hover .email-text {
+    max-width: 300px; /* Достаточно места для адреса */
+    opacity: 1;
+    margin-right: 10px; /* Отступ между адресом и словом EMAIL */
+}
