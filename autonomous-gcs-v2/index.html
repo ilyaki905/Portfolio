@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autonomous Ground Control Station V2 | Case Study</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        /* Дополнительные стили для страницы проекта */
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+        .back-link:hover {
+            text-shadow: 0 0 10px var(--accent);
+        }
+        .project-meta {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+        .meta-item {
+            border: 1px solid var(--border-color);
+            padding: 10px 20px;
+            background: var(--card-bg);
+        }
+        .meta-item span {
+            display: block;
+            font-size: 0.75rem;
+            color: var(--dim);
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        .meta-item p {
+            margin: 0;
+            font-weight: 500;
+            color: var(--text);
+            font-size: 0.95rem;
+        }
+        .project-main-img {
+            width: 100%;
+            max-height: 850px;
+            object-fit: cover;
+            border: 1px solid var(--border-color);
+            margin-bottom: 3rem;
+        }
+        .project-description {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-bottom: 4rem;
+        }
+        .tech-spec-list li {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 8px;
+        }
+        .tech-spec-list li .spec-value {
+            color: var(--accent);
+        }
+        @media (max-width: 768px) {
+            .project-description {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="scanline"></div>
+    
+    <nav>
+        <div class="logo">//SYSTEMS_ARCHITECT</div>
+        <div class="links">
+            <a href="../index.html#projects">PROJECTS</a>
+            <a href="../index.html#store">STORE</a>
+            <a href="../index.html#skills">SKILLS</a>
+        </div>
+    </nav>
+
+    <section style="padding-top: 3rem;">
+        <a href="../index.html#projects" class="back-link">&lt; BACK_TO_LOGS</a>
+
+        <div class="case-header" style="margin-bottom: 1rem;">
+            <h1 style="font-size: 2.8rem; text-align: left; margin: 0;">Autonomous Ground Control Station V2</h1>
+            <!--<span class="tag" style="font-size: 0.8rem; padding: 4px 12px;">GCS / UAV</span> -->
+        </div>
+
+        <div class="project-meta">
+            <div class="meta-item">
+                <span>STATUS</span>
+                <p>SUCCESSFUL</p>
+            </div>
+            <div class="meta-item">
+                <span>TIMELINE</span>
+                <p>Q2 2026</p>
+            </div>
+            <div class="meta-item">
+                <span>ROLE</span>
+                <p> Lead Systems Engineer</p>
+            </div>
+        </div>
+
+        <img src="/images/gcs_v2_3.jpg" alt="Autonomous GCS V2 Main Display" class="project-main-img">
+
+        <div class="project-description">
+            <div class="text-content">
+                <h2>[PROJECT_OVERVIEW]</h2>
+                <p style="color: var(--dim); margin-bottom: 1.5rem;">
+                    The Autonomous Ground Control Station V2 (GCS V2) represents a new generation of field-deployable command centers. Designed to facilitate complex multi-platform operations involving UAVs and UGVs, it integrates high-speed, military-grade data links, automated antenna tracking systems, and an optimized operator interface.
+                </p>
+                <p style="color: var(--dim);">
+                    Key Features:
+                    - Aircraft Control Stick
+                    - Radiomaster TX12 Controller
+                    - Control Sticks, Toggle Switches, and Sliders
+                    - 6 I/O Ports (RJ45, HDMI, USB-A, USB-C)
+                    - Dual Monitors
+                    - Active Cooling System
+                </p>
+                
+                <h2 style="margin-top: 3rem;">[DEVELOPMENT_LOG]</h2>
+                <ul>
+                    <li><span>&gt;</span> Phase 1: Structural architecture and R&D for creating the project's CAD model.</li>
+                    <li><span>&gt;</span> Phase 2: Circuit design and hardware configuration.</li>
+                    <li><span>&gt;</span> Phase 3: Fabrication of composite materials and component assembly within the housing.</li>
+                    <li><span>&gt;</span> Phase 4: Software development for integrating joystick-based controls into Mission Planner.</li>
+                    <li><span>&gt;</span> Phase 5: Modification of the Mission Planner structure for the specialized UAV.</li>
+                </ul>
+            </div>
+
+            <div class="specs-content">
+                <h2>[TECH_SPECS]</h2>
+                <ul class="tech-spec-list">
+                    <li>
+                        <span>Chassis:</span>
+                        <div class="spec-value">IP52 Military Case</div>
+                    </li>
+                    <li>
+                        <span>Modular comms support:</span>
+                        <div class="spec-value">RJ45, USB, USB-C </div>
+                    </li>
+                    <li>
+                        <span>Internal Power :</span>
+                        <div class="spec-value">Li-ion 29V </div>
+                    </li>
+                     <li>
+                        <span>External Power :</span>
+                        <div class="spec-value">Xt-60 24V & IBM 220V </div>
+                    </li>
+                    <li>
+                        <span>Support OS:</span>
+                        <div class="spec-value">Linux / Windows</div>
+                    </li>
+                        <li>
+                        <span>Support Programs:</span>
+                        <div class="spec-value">Mission Planner</div>
+                    </li>
+                    <li>
+                        <span>Battery Life:</span>
+                        <div class="spec-value">30 min</div>
+                    </li>
+                    <li>
+                        <span>Dimensions:</span>
+                        <div class="spec-value">625х495х300 mm</div>
+                    </li>
+                    <li>
+                        <span>Weight:</span>
+                        <div class="spec-value">26.3 kg</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>[Appearance]</h2>
+        <div class="image-pair" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+            <img src="/images/gcs_v2_2.jpg" alt="Field Test 1" class="project-img" style="filter: none; height: 500px;">
+            <img src="/images/gcs_v2_4.jpg" alt="Field Test 2" class="project-img" style="filter: none; height: 500px;">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 // CONNECT: <a href="mailto:7359828@gmail.com" class="email-link"><span class="email-text">7359828@gmail.com</span>EMAIL</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unmanned aerial vehicle with a takeoff weight of 100 kg| Case Study</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        /* Дополнительные стили для страницы проекта */
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+        .back-link:hover {
+            text-shadow: 0 0 10px var(--accent);
+        }
+        .project-meta {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+        .meta-item {
+            border: 1px solid var(--border-color);
+            padding: 10px 20px;
+            background: var(--card-bg);
+        }
+        .meta-item span {
+            display: block;
+            font-size: 0.75rem;
+            color: var(--dim);
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        .meta-item p {
+            margin: 0;
+            font-weight: 500;
+            color: var(--text);
+            font-size: 0.95rem;
+        }
+        .project-main-img {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border: 1px solid var(--border-color);
+            margin-bottom: 3rem;
+        }
+        .project-description {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-bottom: 4rem;
+        }
+        .tech-spec-list li {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 8px;
+        }
+        .tech-spec-list li .spec-value {
+            color: var(--accent);
+        }
+        @media (max-width: 768px) {
+            .project-description {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="scanline"></div>
+    
+    <nav>
+        <div class="logo">//SYSTEMS_ARCHITECT</div>
+        <div class="links">
+            <a href="../index.html#projects">PROJECTS</a>
+            <a href="../index.html#store">STORE</a>
+            <a href="../index.html#skills">SKILLS</a>
+        </div>
+    </nav>
+
+    <section style="padding-top: 3rem;">
+        <a href="../index.html#projects" class="back-link">&lt; BACK_TO_LOGS</a>
+
+        <div class="case-header" style="margin-bottom: 1rem;">
+            <h1 style="font-size: 2.8rem; text-align: left; margin: 0;">Unmanned aerial vehicle with a takeoff weight of 100kg</h1>
+            <!--<span class="tag" style="font-size: 0.8rem; padding: 4px 12px;">GCS / UAV</span> -->
+        </div>
+
+        <div class="project-meta">
+            <div class="meta-item">
+                <span>STATUS</span>
+                <p>SUCCESSFUL</p>
+            </div>
+            <div class="meta-item">
+                <span>TIMELINE</span>
+                <p>Q3 2025</p>
+            </div>
+            <div class="meta-item">
+                <span>ROLE</span>
+                <p>Engineering Manager</p>
+            </div>
+        </div>
+
+        <img src="/images/cargo_uav_3.jpg" alt="Autonomous GCS V2 Main Display" class="project-main-img">
+
+        <div class="project-description">
+            <div class="text-content">
+                <h2>[PROJECT_OVERVIEW]</h2>
+                <p style="color: var(--dim); margin-bottom: 1.5rem;">
+                    This multifunctional multi-rotor drone is utilized for aerial photography, monitoring, cartography, logistics, and other industrial applications, with the capability to be equipped with modular attachments for specialized tasks. It features a payload capacity of 37 kg, with a flight duration of 22 minutes when carrying a load and 11 minutes without a load.
+                </p>
+                <p style="color: var(--dim);">
+                    The drone is equipped with swappable Li-Po batteries; a winch or payload release mechanism can be attached to its underside.
+                    It features a camera mounted on a gimbal, offering 30x zoom capabilities. Two independent communication systems are installed: a primary link operating at 1.4 GHz (5 W) for video and telemetry, and a backup system consisting of either encrypted analog video at 1.2 GHz paired with an ELRS module at 750 MHz (25 W), or a module enabling control via cellular network (for telemetry and video).
+                </p>
+                
+                <h2 style="margin-top: 3rem;">[DEVELOPMENT_LOG]</h2>
+                <ul>
+                    <li><span>&gt;</span> Phase 1: Powerplant calculations and CAD project development.</li>
+                    <li><span>&gt;</span> Phase 2: Configuration and testing of autopilot logic and connections—both in a simulator and on a 9-inch drone.</li>
+                    <li><span>&gt;</span> Phase 3: PID Tuning on the Main Drone.</li>
+                    <li><span>&gt;</span> Phase 4: Full-scale flight with a payload scenario.</li>
+                </ul>
+            </div>
+
+            <div class="specs-content">
+                <h2>[TECH_SPECS]</h2>
+                <ul class="tech-spec-list">
+                    <li>
+                        <span>Maximum takeoff weight:</span>
+                        <div class="spec-value">100kg</div>
+                    </li>
+                    <li>
+                        <span>Payload:</span>
+                        <div class="spec-value">37 kg</div>
+                    </li>
+                    <li>
+                        <span>Device weight:</span>
+                        <div class="spec-value">63  kg</div>
+                    </li>
+                    <li>
+                        <span>Dimensions in transport configuration:</span>
+                        <div class="spec-value">1043x1191x681 mm</div>
+                    </li>
+                    <li>
+                        <span>Flight Range:</span>
+                        <div class="spec-value">Up to 30 km</div>
+                    </li>
+                     <li>
+                        <span>Frame Type:</span>
+                        <div class="spec-value">Quadcopter</div>
+                    </li>
+                    <li>
+                        <span>Backup communication channel:</span>
+                        <div class="spec-value">Lora & LTE</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>[Appearance]</h2>
+        <div class="image-pair" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+            <img src="/images/cargo_uav_4.jpg" alt="Field Test 1" class="project-img" style="filter: none; height: 500px;">
+            <img src="/images/cargo_uav_2.jpg" alt="Field Test 2" class="project-img" style="filter: none; height: 500px;">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 // CONNECT: <a href="mailto:7359828@gmail.com" class="email-link"><span class="email-text">7359828@gmail.com</span>EMAIL</a></p>
+    </footer>
+</body>
+</html>

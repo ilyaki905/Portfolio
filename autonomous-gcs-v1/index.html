@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autonomous Ground Control Station V1 | Case Study</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        /* Дополнительные стили для страницы проекта */
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+        .back-link:hover {
+            text-shadow: 0 0 10px var(--accent);
+        }
+        .project-meta {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+        .meta-item {
+            border: 1px solid var(--border-color);
+            padding: 10px 20px;
+            background: var(--card-bg);
+        }
+        .meta-item span {
+            display: block;
+            font-size: 0.75rem;
+            color: var(--dim);
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        .meta-item p {
+            margin: 0;
+            font-weight: 500;
+            color: var(--text);
+            font-size: 0.95rem;
+        }
+        .project-main-img {
+            width: 100%;
+            max-height: 750px;
+            object-fit: cover;
+            border: 1px solid var(--border-color);
+            margin-bottom: 3rem;
+        }
+        .project-description {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-bottom: 4rem;
+        }
+        .tech-spec-list li {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 8px;
+        }
+        .tech-spec-list li .spec-value {
+            color: var(--accent);
+        }
+        @media (max-width: 768px) {
+            .project-description {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="scanline"></div>
+    
+    <nav>
+        <div class="logo">//SYSTEMS_ARCHITECT</div>
+        <div class="links">
+            <a href="../index.html#projects">PROJECTS</a>
+            <a href="../index.html#store">STORE</a>
+            <a href="../index.html#skills">SKILLS</a>
+        </div>
+    </nav>
+
+    <section style="padding-top: 3rem;">
+        <a href="../index.html#projects" class="back-link">&lt; BACK_TO_LOGS</a>
+
+        <div class="case-header" style="margin-bottom: 1rem;">
+            <h1 style="font-size: 2.8rem; text-align: left; margin: 0;">Autonomous Ground Control Station V2</h1>
+            <!--<span class="tag" style="font-size: 0.8rem; padding: 4px 12px;">GCS / UAV</span> -->
+        </div>
+
+        <div class="project-meta">
+            <div class="meta-item">
+                <span>STATUS</span>
+                <p>Successful</p>
+            </div>
+            <div class="meta-item">
+                <span>TIMELINE</span>
+                <p>Q3 2025</p>
+            </div>
+            <div class="meta-item">
+                <span>ROLE</span>
+                <p>Lead Systems Architect</p>
+            </div>
+        </div>
+
+        <img src="/images/gcs_1.jpg" alt="Autonomous GCS V2 Main Display" class="project-main-img">
+
+        <div class="project-description">
+            <div class="text-content">
+                <h2>[PROJECT_OVERVIEW]</h2>
+                <p style="color: var(--dim); margin-bottom: 1.5rem;">
+                    Autonomous Ground Control Station for Multi-Rotor UAVs.
+                </p>
+                <p style="color: var(--dim);">
+                    Compatible with any transceiver modules; features two screens and connects via USB or RJ45.
+                </p>
+                
+                <!--<h2 style="margin-top: 3rem;">[DEVELOPMENT_LOG]</h2>
+                <ul>
+                    <li><span>&gt;</span> Phase 1: Structural architecture & custom carbon-composite casing R&D.</li>
+                    <li><span>&gt;</span> Phase 2: Integration of proprietary RF switching matrices for multi-band operations.</li>
+                    <li><span>&gt;</span> Phase 3: Software layer fine-tuning and telemetry optimization via high-latency backup links.</li>
+                </ul> -->
+            </div>
+
+            <div class="specs-content">
+                <h2>[TECH_SPECS]</h2>
+                <ul class="tech-spec-list">
+                    <li>
+                        <span>Chassis:</span>
+                        <div class="spec-value">IP67 Military Case</div>
+                    </li>
+                    <li>
+                        <span>Comms Link:</span>
+                        <div class="spec-value">LoRa / 4G LTE / Sat</div>
+                    </li>
+                    <li>
+                        <span>Power Units:</span>
+                        <div class="spec-value">Li-ion 24V Internal</div>
+                    </li>
+                    <li>
+                        <span>OS Support:</span>
+                        <div class="spec-value">Windows</div>
+                    </li>
+                    <li>
+                        <span>Weight:</span>
+                        <div class="spec-value">14.5 kg</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>[Appearance]</h2>
+        <div class="image-pair" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+            <img src="/images/gcs_3.jpg" alt="Field Test 1" class="project-img" style="filter: none; height: 500px;">
+            <img src="/images/gcs_4.jpg" alt="Field Test 2" class="project-img" style="filter: none; height: 500px;">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 // CONNECT: <a href="mailto:7359828@gmail.com" class="email-link"><span class="email-text">7359828@gmail.com</span>EMAIL</a></p>
+    </footer>
+</body>
+</html>

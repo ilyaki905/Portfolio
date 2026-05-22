@@ -1,0 +1,70 @@
+/* Импортируем все глобальные стили, переменные, шрифты и эффекты с твоего основного сайта */
+@import url('/style.css');
+
+/* Стили для нашей новой формы заявки, чтобы она идеально вписалась в киберпанк-дизайн */
+.b2b-form {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: rgba(0, 0, 0, 0.2); /* Темная подложка */
+    border: 1px solid var(--border-color);
+    color: var(--text);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 10px rgba(0, 242, 255, 0.2);
+}
+
+/* Настройка высоты текстового поля */
+textarea.form-input {
+    resize: vertical;
+}
+
+/* Стилизация плейсхолдеров в твоем фирменном приглушенном тоне */
+.form-input::placeholder {
+    color: var(--dim);
+    opacity: 0.6;
+}
+
+/* Сброс стандартных стилей кнопки для тега button */
+button.buy-btn {
+    border: 1px solid var(--accent);
+    outline: none;
+}
+/* Адаптив для мобильных экранов (до 768px) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Выстраиваем логотип и ссылки друг под другом */
+        gap: 10px;
+        padding: 15px 10px;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav .links {
+        display: flex;
+        flex-wrap: wrap;       /* Разрешаем ссылкам переноситься на новую строку, если мало места */
+        justify-content: center;
+        gap: 12px;             /* Расстояние между ссылками */
+    }
+
+    nav .links a {
+        font-size: 0.8rem;     /* Слегка уменьшаем шрифт для мобилок */
+    }
+}
