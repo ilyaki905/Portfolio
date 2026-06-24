@@ -115,4 +115,60 @@ button.buy-btn {
     nav .links a {
         font-size: 0.8rem;     /* Слегка уменьшаем шрифт для мобилок */
     }
+    /* Модальное окно (задний фон) */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 9999; /* Чтобы было поверх шапки и сканирующей линии */
+    padding-top: 50px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.9); /* Черный фон */
+    backdrop-filter: blur(5px); /* Легкое размытие заднего плана */
+}
+
+/* Контент модального окна (сама картинка) */
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 85vh;
+    object-fit: contain;
+    border: 1px solid var(--accent); /* Неоновая рамка вокруг открытого фото */
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.3);
+    
+    /* Анимация появления */
+    animation-name: zoomIn;
+    animation-duration: 0.3s;
+}
+
+@keyframes zoomIn {
+    from {transform: scale(0.95); opacity: 0;} 
+    to {transform: scale(1); opacity: 1;}
+}
+
+/* Кнопка закрытия (крестик) */
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: var(--text);
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'JetBrains Mono', monospace;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal-close:hover {
+    color: var(--accent);
+}
+
+/* Делаем курсор-лупу для кликабельных картинок в карточках */
+.project-img {
+    cursor: zoom-in;
+}
 } 
