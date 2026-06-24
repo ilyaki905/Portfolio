@@ -169,7 +169,7 @@ a { color: var(--accent); text-decoration: none; }
 
 .project-img {
     width: 100%;
-    height: 1000; /* Was 250 */ 
+    height: 850px; /* Was 250 */ 
     object-fit: contain; /* Was cover*/ 
     border: 1px solid var(--border-color);
     filter: grayscale(100%) contrast(1.2); 
