@@ -1,7 +1,7 @@
-/* Импортируем все глобальные стили, переменные, шрифты и эффекты с твоего основного сайта */
+/* Импортируем все глобальные стили, переменные, шрифты и эффекты с основного сайта */
 @import url('/style.css');
 
-/* Стили для нашей новой формы заявки, чтобы она идеально вписалась в киберпанк-дизайн */
+/* Стили для формы заявки в киберпанк-дизайне */
 .b2b-form {
     margin-top: 25px;
     display: flex;
@@ -36,7 +36,7 @@ textarea.form-input {
     resize: vertical;
 }
 
-/* Стилизация плейсхолдеров в твоем фирменном приглушенном тоне */
+/* Стилизация плейсхолдеров в фирменном приглушенном тоне */
 .form-input::placeholder {
     color: var(--dim);
     opacity: 0.6;
@@ -47,27 +47,7 @@ button.buy-btn {
     border: 1px solid var(--accent);
     outline: none;
 }
-/* Адаптив для мобильных экранов (до 768px) */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column; /* Выстраиваем логотип и ссылки друг под другом */
-        gap: 10px;
-        padding: 15px 10px;
-        align-items: center;
-        text-align: center;
-    }
 
-    nav .links {
-        display: flex;
-        flex-wrap: wrap;       /* Разрешаем ссылкам переноситься на новую строку, если мало места */
-        justify-content: center;
-        gap: 12px;             /* Расстояние между ссылками */
-    }
-
-    nav .links a {
-        font-size: 0.8rem;     /* Слегка уменьшаем шрифт для мобилок */
-    }
-}
 /* Специальный контейнер для сохранения пропорций видео 16:9 внутри карточки */
 .video-container {
     position: relative;
@@ -95,12 +75,13 @@ button.buy-btn {
     border-color: var(--accent);
     box-shadow: 0 0 15px rgba(0, 242, 255, 0.2);
 }
+
 /* Стили для одной большой картинки в карточке сферы применения */
 .project-img-single {
     display: block;
     width: 100%; /* Растягивается на всю доступную ширину */
     max-width: 100%;
-    height: auto; /* Высота подстраивается автоматически, чтобы не резать схему */
+    height: auto !important; /* Принудительно сохраняет правильные пропорции */
     max-height: 897px; /* Ограничиваем максимальную высоту на больших мониторах */
     object-fit: contain; /* Картинка гарантированно помещается целиком, без обрезки */
     margin: 20px auto 0 auto;
@@ -117,4 +98,24 @@ button.buy-btn {
     border-color: var(--accent);
 }
 
-} 
+/* Адаптив для мобильных экранов (до 768px) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Выстраиваем логотип и ссылки друг под другом */
+        gap: 10px;
+        padding: 15px 10px;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav .links {
+        display: flex;
+        flex-wrap: wrap;       /* Разрешаем ссылкам переноситься на новую строку, если мало места */
+        justify-content: center;
+        gap: 12px;             /* Расстояние между ссылками */
+    }
+
+    nav .links a {
+        font-size: 0.8rem;     /* Слегка уменьшаем шрифт для мобилок */
+    }
+}
