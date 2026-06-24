@@ -169,8 +169,8 @@ a { color: var(--accent); text-decoration: none; }
 
 .project-img {
     width: 100%;
-    height: 250px; /* было 150зч*/ 
-    object-fit: cover; 
+    height: auto; /* было 250зч*/ 
+    object-fit: contain; /* было cover*/ 
     border: 1px solid var(--border-color);
     filter: grayscale(100%) contrast(1.2); 
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
