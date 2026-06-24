@@ -149,6 +149,11 @@
         </p>
     </footer>
 
+<div id="image-modal" class="modal">
+    <span class="modal-close">&times;</span>
+    <img class="modal-content" id="modal-img" src="" alt="Увеличенное изображение">
+</div>
+
 <script>
     // --- ЭФФЕКТ ДЕШИФРОВАНИЯ ЗАГОЛОВКА ---
     const textElement = document.getElementById('decrypt-title');
@@ -189,7 +194,7 @@
         });
     });
 
-    // Закрытие при клике на крестик (с защитой от null)
+    // Закрытие при клике на крестик
     if (closeBtn && modal) {
         closeBtn.addEventListener('click', () => {
             modal.style.display = "none";
@@ -212,11 +217,6 @@
         });
     }
 </script>
-
-<div id="image-modal" class="modal">
-    <span class="modal-close">&times;</span>
-    <img class="modal-content" id="modal-img" src="" alt="Увеличенное изображение">
-</div>
 
 </body>
 </html>
