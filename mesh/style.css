@@ -78,18 +78,21 @@ button.buy-btn {
 
 /* Стили для одной большой картинки в карточке сферы применения */
 .project-img-single {
-    display: block;
-    width: 100%; /* Растягивается на всю доступную ширину */
-    max-width: 100%;
-    height: auto !important; /* Принудительно сохраняет правильные пропорции */
-    max-height: 897px; /* Ограничиваем максимальную высоту на больших мониторах */
-    object-fit: contain; /* Картинка гарантированно помещается целиком, без обрезки */
-    margin: 20px auto 0 auto;
-    border: 1px solid var(--border-color); /* Исходная рамка */
+    display: block !important;
+    width: 100% !important;        /* Занимает всю ширину карточки */
+    max-width: 100% !important;
+    
+    /* СБРОС: Полностью отключаем фиксированную высоту и кадрирование */
+    height: auto !important;       
+    max-height: none !important;   
+    object-fit: fill !important;   /* Либо можно убрать object-fit совсем */
+    
+    margin: 20px auto 0 auto !important;
+    border: 1px solid var(--border-color); 
     filter: grayscale(100%) contrast(1.2); 
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    box-sizing: border-box;
-    background-color: #ffffff; /* Белый фон-подложка, так как сама схема на белом фоне */
+    box-sizing: border-box !important;
+    background-color: #ffffff;    /* Белый фон-подложка */
 }
 
 /* Эффект проявления цвета и неона при наведении на карточку */
