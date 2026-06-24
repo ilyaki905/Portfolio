@@ -68,3 +68,30 @@ button.buy-btn {
         font-size: 0.8rem;     /* Слегка уменьшаем шрифт для мобилок */
     }
 }
+/* Специальный контейнер для сохранения пропорций видео 16:9 внутри карточки */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Пропорции 16:9 */
+    height: 0;
+    overflow: hidden;
+    margin-top: 15px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+/* Растягиваем само видео на 100% ширины и высоты контейнера */
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: #000; /* Черный фон, пока видео не запущено */
+}
+
+/* Эффект неонового свечения рамки видео при наведении на карточку */
+.card:hover .video-container {
+    border-color: var(--accent);
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.2);
+}
