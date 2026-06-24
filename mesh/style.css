@@ -81,7 +81,7 @@ button.buy-btn {
     width: 100%;          /* Растягиваем по ширине карточки */
     height: auto;         /* Высота подстроится сама, сохраняя пропорции схемы */
     display: block;       
-    margin-top: 20px;     /* Красивый отступ от текста сверху */
+    margin-top: 20px;     /* Красивый отступ от текста сверху .*/
     
     border: 1px solid var(--border-color); 
     filter: grayscale(100%) contrast(1.2); 
