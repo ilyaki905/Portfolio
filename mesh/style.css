@@ -95,19 +95,21 @@ button.buy-btn {
     border-color: var(--accent);
     box-shadow: 0 0 15px rgba(0, 242, 255, 0.2);
 }
-/* Стили для одной большой картинки в карточке сферы применения */
+/* Стили для одной большой картинки в карточке */
 .project-img-single {
-    width: 100%;
-    height: 350px; /* Увеличили высоту (было 250px), чтобы разрешение казалось больше */
-    object-fit: cover; /* Картинка красиво заполнит пространство без деформации */
     display: block;
-    margin: 15px auto 0 auto; /* Центрирование и отступ сверху */
+    width: 100%; /* Растягивает картинку на всю ширину текстового блока */
+    max-width: 100%;
+    height: 380px; /* Фиксированная высота для сохранения аккуратных пропорций */
+    object-fit: cover; /* Обрезает картинку по краям, чтобы она не сжималась */
+    margin: 20px auto 0 auto; /* Делает отступ сверху и центрирует */
     border: 1px solid var(--border-color);
     filter: grayscale(100%) contrast(1.2); 
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-sizing: border-box;
 }
 
-/* Эффект проявления цвета при наведении на карточку */
+/* Эффект проявления цвета при наведении на родительскую карточку */
 .card:hover .project-img-single {
     filter: grayscale(0%) contrast(1); 
     border-color: var(--accent);
