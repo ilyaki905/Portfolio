@@ -78,21 +78,15 @@ button.buy-btn {
 
 /* Стили для одной большой картинки в карточке сферы применения */
 .project-img-single {
-    display: block !important;
-    width: 100% !important;        /* Занимает всю ширину карточки */
-    max-width: 100% !important;
+    display: block;
+    max-width: 100%;
+    height: auto; /* Позволяет картинке пропорционально масштабироваться */
     
-    /* СБРОС: Полностью отключаем фиксированную высоту и кадрирование */
-    height: auto !important;       
-    max-height: none !important;   
-    object-fit: fill !important;   /* Либо можно убрать object-fit совсем */
-    
-    margin: 20px auto 0 auto !important;
+    margin: 20px auto 0 auto;
     border: 1px solid var(--border-color); 
     filter: grayscale(100%) contrast(1.2); 
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    box-sizing: border-box !important;
-    background-color: #ffffff;    /* Белый фон-подложка */
+    box-sizing: border-box;
 }
 
 /* Эффект проявления цвета и неона при наведении на карточку */
