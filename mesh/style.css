@@ -176,3 +176,52 @@ button.buy-btn {
 .project-img {
     cursor: zoom-in;
 }
+/* =========================================
+   ССЫЛКИ НА ПРИЛОЖЕНИЯ
+   ========================================= */
+
+.app-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.app-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px dashed var(--border-color);
+}
+
+.app-links .buy-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.secondary-btn {
+    background-color: transparent !important;
+    color: var(--accent) !important;
+}
+
+.secondary-btn:hover {
+    background-color: var(--accent) !important;
+    color: var(--bg) !important;
+}
+
+
+/* АДАПТАЦИЯ ПОД ТЕЛЕФОН */
+@media (max-width: 600px) {
+
+    .app-links {
+        flex-direction: column;
+    }
+
+    .app-links .buy-btn {
+        width: 100%;
+    }
+}
